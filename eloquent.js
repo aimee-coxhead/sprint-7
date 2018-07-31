@@ -54,6 +54,9 @@ const countChar = function(string, letter) {
   return counter;
 };
 
+/* const countBs = function(string) {
+return countChar (string, "B")} */
+
 console.log(countBs("BBC"));
 // → 2
 console.log(countChar("kakkerlak", "k"));
