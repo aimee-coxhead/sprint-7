@@ -36,7 +36,7 @@ const countBs = function(string) {
     if (string[i] === "B") {
     counter ++;
     } else if (string[i] === !"B"){
-      return counter;
+    counter;
   }
   }
   return counter;
@@ -48,7 +48,7 @@ const countChar = function(string, letter) {
     if (string[i] === letter) {
     counter ++;
     } else if (string[i] === !letter){
-      return counter;
+    counter;
   }
   }
   return counter;
