@@ -1,3 +1,4 @@
+1.
 function min(a, b) {
     if (a < b) return a;
     else return b;
@@ -8,7 +9,7 @@ function min(a, b) {
   console.log(min(0, -10));
   // → -10
 
-
+2.
 function isEven(n) {
     if (n === 0) {
       return true;
@@ -27,3 +28,33 @@ console.log(isEven(75));
 // → false
 console.log(isEven(-1));
 // → ??
+
+3. 
+const countBs = function(string) {
+  let counter = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "B") {
+    counter ++;
+    } else if (string[i] === !"B"){
+      return counter;
+  }
+  }
+  return counter;
+};
+
+const countChar = function(string, letter) {
+  let counter = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === letter) {
+    counter ++;
+    } else if (string[i] === !letter){
+      return counter;
+  }
+  }
+  return counter;
+};
+
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
